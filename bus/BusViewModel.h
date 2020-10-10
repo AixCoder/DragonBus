@@ -17,13 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface BRT1ViewModel : BusViewModel
-
-- (void)startRequestBRT1RoadWithDirection:(NSString *)direction
-                            stationName:(NSString *)stationPoint;
-
-@end
-
 @interface Bus11ViewModel: BusViewModel
 
 - (void)startRequest11RoadWithDirection:(NSString *)direction

@@ -7,60 +7,45 @@
 //
 
 #import "BusViewModel.h"
-#import "BusInfoManager.h"
+#import "BusService.h"
 
 @implementation BusViewModel
 
 @end
 
-@interface BRT1ViewModel ()
-@property(nonatomic, strong) BusInfoManager *busManager;
-@end
 
-@implementation BRT1ViewModel
-
-- (void)startRequestBRT1RoadWithDirection:(NSString *)direction stationName:(NSString *)stationPoint {
-
-    __weak typeof(self) weakSelf = self;
-
-    _busManager = [[BusInfoManager alloc] init];
-
-    [_busManager queryBusInfoWithRoadName:@"B1路"
-                                direction:direction
-                              stationName:stationPoint
-                               completion:^(NSString *busInfo, NSError *error) {
-
-        if (error){
-
-        } else{
-            weakSelf.result = busInfo;
-        }
-
-                               }];
-}
-@end
+//    _busService = [[BusService alloc] init];
+//    [_busService queryBusWithRoadName:@"81" direction:direction busStation:stationPoint completion:^(NSDictionary * _Nullable busInfo, NSError * _Nullable error) {
+//
+//        if (error) {
+//            weakSelf.error = error;
+//        }else{
+//            weakSelf.result = busInfo;
+//        }
+//    }];
 
 
 @interface Bus11ViewModel()
-@property (nonatomic, strong) BusInfoManager *busManager;
+
+@property (nonatomic,strong) BusService *busService;
+
 @end
 @implementation Bus11ViewModel
 - (void)startRequest11RoadWithDirection:(NSString *)direction stationName:(NSString *)stationPoint {
 
-    __weak typeof(self) weakSelf = self;
-
-    _busManager = [[BusInfoManager alloc] init];
+    __weak typeof(self) weakSelf = self;    
+    _busService = [[BusService alloc] init];
     
-    [_busManager queryBusInfoWithRoadName:@"11路"
-                                direction:direction
-                              stationName:stationPoint
-                               completion:^(NSString *busInfo, NSError *error) {
-
-        if (error){
-
-        } else{
-            weakSelf.result = busInfo;
-        }
+    [_busService queryBusWithRoadName:@"11"
+                            direction:direction busStation:stationPoint completion:^(NSDictionary * _Nullable busInfo, NSError * _Nullable error) {
+                                
+                                if (error) {
+                                    weakSelf.error = error;
+                                }else{
+                                    weakSelf.result = busInfo;
+                                }
+        
     }];
+    
 }
 @end

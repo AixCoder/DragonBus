@@ -15,10 +15,30 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/**
+ 实时查询线路上运行着的车辆信息
+ */
 @interface BusInfoRequest : YTKRequest
 
 - (instancetype)initWithRequestPar:(NSDictionary *)parameters;
 
+
+@end
+
+
+/**
+ bus line info
+ 查询公交线路中所有的站点
+ */
+@interface LineRequest : YTKRequest
+
+- (instancetype)initWithPar:(NSDictionary *)parameters;
+
+@end
+
+@interface SearchBusLineRequest : YTKRequest
+
+- (instancetype)initWithLineName:(NSString *)lineName;
 
 @end
 

@@ -7,11 +7,9 @@
 //
 
 #import "APIKeys.h"
-NSString * const kAPIRequestKeyCityName = @"CITYNAME";
- NSString * const kAPIRequestKeyLineName = @"LINENAME";
- NSString * const kAPIRequestKeyDirection = @"DIRECTION";
- NSString * const kAPIRequestKeyCMD = @"CMD";
 
+NSString * const kAPIRequestKeyLineID = @"Line_Id";
+NSString * const kAPIRequestKeyLineType = @"Line_Type";
 
 @implementation APIKeys
 

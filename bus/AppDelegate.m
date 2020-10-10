@@ -22,6 +22,10 @@
     
 //    [AFHTTPSessionManager manager].responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",nil];
     
+    if (DEBUG) {
+        [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+    }
+    
     return YES;
 }
 

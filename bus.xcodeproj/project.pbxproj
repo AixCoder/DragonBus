@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F634FE022500D22A0037669C /* SearchBusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F634FE002500D22A0037669C /* SearchBusVC.m */; };
+		F634FE032500D22A0037669C /* SearchBusVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F634FE012500D22A0037669C /* SearchBusVC.xib */; };
+		F634FE062500D6E60037669C /* SearchLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634FE042500D6E60037669C /* SearchLineViewController.swift */; };
+		F634FE072500D6E60037669C /* SearchLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F634FE052500D6E60037669C /* SearchLineViewController.xib */; };
+		F67B39EA24D819D2001A4623 /* CZApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B39E924D819D2001A4623 /* CZApi.swift */; };
+		F67FF3A624E50B6E00BAF1C4 /* CZBusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FF3A524E50B6E00BAF1C4 /* CZBusService.swift */; };
+		F67FF3A824E5297D00BAF1C4 /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FF3A724E5297D00BAF1C4 /* BusModel.swift */; };
 		F691B1112191524700B88ACD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F691B1102191524700B88ACD /* AppDelegate.m */; };
 		F691B1142191524700B88ACD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F691B1132191524700B88ACD /* ViewController.m */; };
 		F691B1172191524700B88ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F691B1152191524700B88ACD /* Main.storyboard */; };
@@ -44,8 +51,9 @@
 		F696707F21926E1B00E9902C /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = F696707C21926E1B00E9902C /* NSObject+FBKVOController.m */; };
 		F696708021926E1B00E9902C /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = F696707D21926E1B00E9902C /* FBKVOController.m */; };
 		F696708321926F1500E9902C /* BusViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F696708221926F1500E9902C /* BusViewModel.m */; };
-		F696708621926F4000E9902C /* Bus59ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F696708521926F4000E9902C /* Bus59ViewModel.m */; };
 		F69670892192735C00E9902C /* BusInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F69670882192735C00E9902C /* BusInfoManager.m */; };
+		F6B6ED052226218100A1918A /* BusService.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6ED042226218100A1918A /* BusService.m */; };
+		F6DC635F24E3DC960068D2B6 /* BusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC635E24E3DC950068D2B6 /* BusViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F634FDFF2500D22A0037669C /* SearchBusVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBusVC.h; sourceTree = "<group>"; };
+		F634FE002500D22A0037669C /* SearchBusVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBusVC.m; sourceTree = "<group>"; };
+		F634FE012500D22A0037669C /* SearchBusVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBusVC.xib; sourceTree = "<group>"; };
+		F634FE042500D6E60037669C /* SearchLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLineViewController.swift; sourceTree = "<group>"; };
+		F634FE052500D6E60037669C /* SearchLineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchLineViewController.xib; sourceTree = "<group>"; };
+		F67B39E824D819D2001A4623 /* bus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bus-Bridging-Header.h"; sourceTree = "<group>"; };
+		F67B39E924D819D2001A4623 /* CZApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZApi.swift; sourceTree = "<group>"; };
+		F67FF3A524E50B6E00BAF1C4 /* CZBusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZBusService.swift; sourceTree = "<group>"; };
+		F67FF3A724E5297D00BAF1C4 /* BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusModel.swift; sourceTree = "<group>"; };
 		F691B10C2191524700B88ACD /* bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F691B10F2191524700B88ACD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F691B1102191524700B88ACD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,10 +163,11 @@
 		F696707E21926E1B00E9902C /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
 		F696708121926F1500E9902C /* BusViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusViewModel.h; sourceTree = "<group>"; };
 		F696708221926F1500E9902C /* BusViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusViewModel.m; sourceTree = "<group>"; };
-		F696708421926F4000E9902C /* Bus59ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bus59ViewModel.h; sourceTree = "<group>"; };
-		F696708521926F4000E9902C /* Bus59ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bus59ViewModel.m; sourceTree = "<group>"; };
 		F69670872192735C00E9902C /* BusInfoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusInfoManager.h; sourceTree = "<group>"; };
 		F69670882192735C00E9902C /* BusInfoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusInfoManager.m; sourceTree = "<group>"; };
+		F6B6ED032226218100A1918A /* BusService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusService.h; sourceTree = "<group>"; };
+		F6B6ED042226218100A1918A /* BusService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusService.m; sourceTree = "<group>"; };
+		F6DC635E24E3DC950068D2B6 /* BusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,21 +225,31 @@
 				F691B1102191524700B88ACD /* AppDelegate.m */,
 				F691B1122191524700B88ACD /* ViewController.h */,
 				F691B1132191524700B88ACD /* ViewController.m */,
+				F634FE042500D6E60037669C /* SearchLineViewController.swift */,
+				F634FE052500D6E60037669C /* SearchLineViewController.xib */,
 				F691B1912191546400B88ACD /* APIRequest.h */,
 				F691B1922191546400B88ACD /* APIRequest.m */,
+				F67B39E924D819D2001A4623 /* CZApi.swift */,
 				F691B1942191557F00B88ACD /* APIKeys.h */,
 				F691B1952191557F00B88ACD /* APIKeys.m */,
 				F696708121926F1500E9902C /* BusViewModel.h */,
 				F696708221926F1500E9902C /* BusViewModel.m */,
-				F696708421926F4000E9902C /* Bus59ViewModel.h */,
-				F696708521926F4000E9902C /* Bus59ViewModel.m */,
+				F6DC635E24E3DC950068D2B6 /* BusViewModel.swift */,
 				F69670872192735C00E9902C /* BusInfoManager.h */,
 				F69670882192735C00E9902C /* BusInfoManager.m */,
+				F6B6ED032226218100A1918A /* BusService.h */,
+				F6B6ED042226218100A1918A /* BusService.m */,
+				F67FF3A724E5297D00BAF1C4 /* BusModel.swift */,
+				F67FF3A524E50B6E00BAF1C4 /* CZBusService.swift */,
+				F634FDFF2500D22A0037669C /* SearchBusVC.h */,
+				F634FE002500D22A0037669C /* SearchBusVC.m */,
+				F634FE012500D22A0037669C /* SearchBusVC.xib */,
 				F691B1152191524700B88ACD /* Main.storyboard */,
 				F691B1182191524A00B88ACD /* Assets.xcassets */,
 				F691B11A2191524A00B88ACD /* LaunchScreen.storyboard */,
 				F691B11D2191524A00B88ACD /* Info.plist */,
 				F691B11E2191524B00B88ACD /* main.m */,
+				F67B39E824D819D2001A4623 /* bus-Bridging-Header.h */,
 			);
 			path = bus;
 			sourceTree = "<group>";
@@ -398,6 +426,7 @@
 				TargetAttributes = {
 					F691B10B2191524700B88ACD = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1150;
 					};
 					F691B1232191524B00B88ACD = {
 						CreatedOnToolsVersion = 10.0;
@@ -435,6 +464,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F691B11C2191524A00B88ACD /* LaunchScreen.storyboard in Resources */,
+				F634FE072500D6E60037669C /* SearchLineViewController.xib in Resources */,
+				F634FE032500D22A0037669C /* SearchBusVC.xib in Resources */,
 				F691B1192191524A00B88ACD /* Assets.xcassets in Resources */,
 				F691B1172191524700B88ACD /* Main.storyboard in Resources */,
 			);
@@ -464,6 +495,7 @@
 				F691B1142191524700B88ACD /* ViewController.m in Sources */,
 				F691B16E219153CD00B88ACD /* UIImageView+AFNetworking.m in Sources */,
 				F691B1932191546400B88ACD /* APIRequest.m in Sources */,
+				F6DC635F24E3DC960068D2B6 /* BusViewModel.swift in Sources */,
 				F691B172219153CD00B88ACD /* AFAutoPurgingImageCache.m in Sources */,
 				F691B16F219153CD00B88ACD /* UIButton+AFNetworking.m in Sources */,
 				F691B18A219153FA00B88ACD /* YTKNetworkPrivate.m in Sources */,
@@ -480,18 +512,23 @@
 				F69670892192735C00E9902C /* BusInfoManager.m in Sources */,
 				F691B18D219153FA00B88ACD /* YTKNetworkAgent.m in Sources */,
 				F691B152219153C000B88ACD /* AFURLSessionManager.m in Sources */,
+				F634FE022500D22A0037669C /* SearchBusVC.m in Sources */,
 				F691B188219153FA00B88ACD /* YTKNetworkConfig.m in Sources */,
+				F634FE062500D6E60037669C /* SearchLineViewController.swift in Sources */,
 				F691B189219153FA00B88ACD /* YTKChainRequest.m in Sources */,
 				F696707F21926E1B00E9902C /* NSObject+FBKVOController.m in Sources */,
 				F691B18F219153FA00B88ACD /* YTKBatchRequestAgent.m in Sources */,
 				F691B173219153CD00B88ACD /* AFImageDownloader.m in Sources */,
 				F691B190219153FA00B88ACD /* YTKRequest.m in Sources */,
+				F67FF3A824E5297D00BAF1C4 /* BusModel.swift in Sources */,
 				F691B150219153C000B88ACD /* AFURLResponseSerialization.m in Sources */,
 				F691B18E219153FA00B88ACD /* YTKChainRequestAgent.m in Sources */,
 				F691B16C219153CD00B88ACD /* UIRefreshControl+AFNetworking.m in Sources */,
 				F691B16D219153CD00B88ACD /* AFNetworkActivityIndicatorManager.m in Sources */,
-				F696708621926F4000E9902C /* Bus59ViewModel.m in Sources */,
+				F67B39EA24D819D2001A4623 /* CZApi.swift in Sources */,
 				F691B153219153C000B88ACD /* AFURLRequestSerialization.m in Sources */,
+				F67FF3A624E50B6E00BAF1C4 /* CZBusService.swift in Sources */,
+				F6B6ED052226218100A1918A /* BusService.m in Sources */,
 				F691B154219153C000B88ACD /* AFNetworkReachabilityManager.m in Sources */,
 				F691B1112191524700B88ACD /* AppDelegate.m in Sources */,
 				F696708321926F1500E9902C /* BusViewModel.m in Sources */,
@@ -665,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGD325J4L4;
 				INFOPLIST_FILE = bus/Info.plist;
@@ -674,6 +712,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AixCoder.bus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bus/bus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -682,6 +723,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGD325J4L4;
 				INFOPLIST_FILE = bus/Info.plist;
@@ -691,6 +733,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AixCoder.bus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bus/bus-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -698,6 +742,7 @@
 		F691B13C2191524B00B88ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGD325J4L4;
@@ -717,6 +762,7 @@
 		F691B13D2191524B00B88ACD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGD325J4L4;
@@ -736,6 +782,7 @@
 		F691B13F2191524B00B88ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGD325J4L4;
 				INFOPLIST_FILE = busUITests/Info.plist;
@@ -754,6 +801,7 @@
 		F691B1402191524B00B88ACD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGD325J4L4;
 				INFOPLIST_FILE = busUITests/Info.plist;

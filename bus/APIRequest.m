@@ -27,12 +27,14 @@
 
 - (NSString *)requestUrl
 {
-    return @"http://0519.mygolbs.com:8081/MyBuscz/BusAction";
+//https://czxxcxapi.czsmk.com:30003/bus/CzBus/V4.0/Bus/GetList?Line_Id=81&Line_Type=1
+//    return @"http://api.czjtkx.com/CzBus/V4.0/Bus/GetList";
+    return @"https://czxxcxapi.czsmk.com:30003/bus/CzBus/V4.0/Bus/GetList";
 }
 
 - (YTKRequestMethod)requestMethod
 {
-    return YTKRequestMethodPOST;
+    return YTKRequestMethodGET;
 }
 
 - (id)requestArgument
@@ -40,9 +42,74 @@
     return _requestParams;
 }
 
-- (YTKResponseSerializerType)responseSerializerType
+@end
+
+@interface LineRequest ()
+
+@property (nonatomic,strong) NSDictionary *parameter;
+
+@end
+
+@implementation LineRequest
+
+- (NSString *)requestUrl
 {
-    return YTKResponseSerializerTypeHTTP;
+//    http://api.czjtkx.com/CzBus/V4.0/Station/GetListByLine?Line_Id=81&Line_Type=1
+    return @"http://api.czjtkx.com/CzBus/V4.0/Station/GetListByLine";
 }
+
+- (YTKRequestMethod)requestMethod
+{
+    return YTKRequestMethodGET;
+}
+
+- (id)requestArgument
+{
+    return _parameter;
+}
+
+- (instancetype)initWithPar:(NSDictionary *)parameters
+{
+    if (self = [super init]) {
+        _parameter = parameters;
+    }
+    return self;
+}
+
+@end
+
+
+@interface SearchBusLineRequest ()
+@property (nonatomic,copy) NSString *lineName;
+
+@end
+@implementation SearchBusLineRequest
+
+- (instancetype)initWithLineName:(NSString *)lineName
+{
+    if (self = [super init]) {
+        _lineName = lineName;
+    }
+    return self;
+}
+
+- (NSString *)requestUrl
+{
+//    http://api.czjtkx.com/CzBus/V4.0/Line/GetList?Line_Name=59
+    return @"http://api.czjtkx.com/CzBus/V4.0/Line/GetList";
+}
+
+- (YTKRequestMethod)requestMethod
+{
+    return YTKRequestMethodGET;
+}
+
+- (id)requestArgument
+{
+    return @{@"Line_Name": _lineName};
+    
+}
+
+
 
 @end

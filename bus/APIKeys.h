@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-extern NSString * const kAPIRequestKeyCityName;
-extern NSString * const kAPIRequestKeyLineName;
-extern NSString * const kAPIRequestKeyDirection;
-extern NSString * const kAPIRequestKeyCMD;
+
+extern NSString * const kAPIRequestKeyLineID;
+extern NSString * const kAPIRequestKeyLineType;
 //extern NSString * const kAPIRequestKey
 //CITYNAME    常州市
 //LINENAME    59路
