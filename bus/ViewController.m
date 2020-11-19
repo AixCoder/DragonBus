@@ -238,12 +238,12 @@ typedef NS_ENUM(NSUInteger, TimeModel) {
         [_brt1ViewModel startRequestWithDirection:@"2" station:@"辽河路常澄路"];
     }
 
-//    _searchBusApi = [[SearchBusApi alloc] initWithLineName:@"59"];
-//    [_searchBusApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-//        NSLog(@"search results: %@",request.responseString);
-//    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-//
-//    }];
+    _searchBusApi = [[SearchBusApi alloc] initWithLineName:@"59"];
+    [_searchBusApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"search results: %@",request.responseString);
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+
+    }];
     //
 }
 
