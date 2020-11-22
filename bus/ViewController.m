@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "NSObject+FBKVOController.h"
 #import "bus-Swift.h"
-#import "BusViewModel.h"
 
 typedef NS_ENUM(NSUInteger, TimeModel) {
     WorkTimeMode = 1,
@@ -24,8 +23,6 @@ typedef NS_ENUM(NSUInteger, TimeModel) {
 @property (nonatomic, strong) BRT1ViewModel *brt1ViewModel;
 
 @property(nonatomic, assign) TimeModel currentModel;
-
-@property (nonatomic, strong) SearchBusApi *searchBusApi;
 
 @property (weak, nonatomic) IBOutlet UILabel *bus59Station;
 @property (weak, nonatomic) IBOutlet UILabel *bus59First;
@@ -238,13 +235,6 @@ typedef NS_ENUM(NSUInteger, TimeModel) {
         [_brt1ViewModel startRequestWithDirection:@"2" station:@"辽河路常澄路"];
     }
 
-    _searchBusApi = [[SearchBusApi alloc] initWithLineName:@"59"];
-    [_searchBusApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"search results: %@",request.responseString);
-    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-
-    }];
-    //
 }
 
 - (void)startRequest59BusInfo {

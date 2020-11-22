@@ -27,8 +27,13 @@ class Bus59ViewModel: CZBusViewModel {
     @objc func startRequest(withDirection direction: String, station: String) {
         
 
-        busService.queryBus(roadName: "59", direction: direction, station: station) { (busResult, error) in
-            
+        busService.queryBus(roadName: "59", direction: direction, station: station) {[weak self] (busResult, error) in
+
+            if (error == nil) {
+                self?.result = busResult
+            }else{
+                self?.error = error
+            }
         }
         
         
@@ -38,17 +43,18 @@ class Bus59ViewModel: CZBusViewModel {
 
 class BRT1ViewModel: CZBusViewModel {
     
-    private let busService = BusService.init()
+    private let busService = CZBusService.init()
     
     @objc func startRequest(withDirection direction: String, station: String) {
         
-        busService.queryBus(withRoadName: "81", direction: direction, busStation: station) {[weak self] (bus_result, error) in
+        busService.queryBus(roadName: "81", direction: direction, station: station) {[weak self] (busResult , error) in
             
-            if (error == nil){
-                self?.result = bus_result!
+            if (error == nil) {
+                self?.result = busResult
             }else{
-                self?.error = error as NSError?
+                self?.error = error
             }
         }
+        
     }
 }

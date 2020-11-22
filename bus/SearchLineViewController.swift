@@ -14,6 +14,14 @@ class SearchLineViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        _searchBusApi = [[SearchBusApi alloc] initWithLineName:@"59"];
+//        [_searchBusApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+//            NSLog(@"search results: %@",request.responseString);
+//        } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+//
+//        }];
+        
+        
     }
     
     @objc func injected() {
